@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nippon tilbyder japansk inspirerede måltidskasser til alle typer af behov. Måltider i form af både eksklusive og økologiske måltidskasser, samt sunde og budgetvenlige måltider. Udforsk det japanske køkken og alle dets forskellige smagfulde råvarer og spændende krydderier. Hos Nippon bestræber vi os på at levere den autentiske og traditionelle japanske smag til alle interesserede.">
+    <title>Nippon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/izx6hjw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="media/favicon.ico">
+</head>
+<body>
+
+<!-- kurv ikon -->
+    <div class="cart">
+        <img id="cart-icon" src="media/cart.webp" alt="cart">
+    </div>
+
+    <!-- bruger ikon -->
+    <div class="user">
+        <img id="user-icon" src="media/user.webp" alt="user">
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar">
+
+        <ul class="menu">
+
+          <li class="forside"><a href="index.html">FORSIDE</a></li>
+
+          <li class="dropdown">
+            <a href="index.html#baggrund2" class="dropbtn">MÅLTIDSKASSER</a>
+            <div class="dropdown-content">
+              <a href="kraesen.html">Kræsen Kasse</a>
+              <a href="luksus.html">Luksus Kasse</a>
+              <a href="sund.html">Sunde Kasse</a>
+              <a href="vegansk.html">Veganske Kasse</a>
+            </div>
+          </li>
+
+          <!-- logo -->
+          <li class="logo"><a href="index.html"><img src="media/nippon-logo.webp" alt="Nippon logo"></a></li>
+
+          <li class="dropdown">
+            <a href="oekologi.html" class="dropbtn">BÆREDYGTIGHED</a>
+            <div class="dropdown-content">
+              <a href="oekologi.html">Økologi</a>
+              <a href="klimaaftryk.html">Klimaaftryk</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="om-os.html" class="dropbtn">OM OS</a>
+            <div class="dropdown-content">
+              <a href="certificeringer.html">Certificeringer</a>
+            </div>
+          </li>
+
+        </ul>
+
+    </nav>
+
+<!-- Tekst til siden -->
+    <h1 class="sund-h1">SUND KASSE</h1>
+    <br>
+    <p class="sund-p">Den sunde kasse tilbyder næringsrige måltider skabt til at tilfredsstille fire sultne unge mennesker. 
+      <br><br>Med store portioner og enkle opskrifter, der kan tilberedes på bare 30-40 minutter, er det den perfekte løsning til at holde energien oppe under studierne eller arbejdet. Med fokus på friske ingredienser som grøntsager, fuldkorn og magert protein, sikrer kassen, at du kan opretholde en sund livsstil uden at gå på kompromis med smag eller tid.
+
+    </p>
+  
+
+   
+<!-- baggrundsbillede -->
+    <div class="kraesen-bg-container">
+      <div class="kraesen-bg-grid-item"><img src="media/baggrund.webp" alt="background image"></div>
+      <div class="kraesen-bg-grid-item"><img src="media/baggrund.webp" alt="background image"></div>
+      <div class="kraesen-bg-grid-item-1"><img src="media/baggrund.webp" alt="background image"></div>
+    </div>
+    
+
+    <!-- retter, 1 -->
+    <div class="sund-container-1">
+      <div class="kraesen-grid-item-1"><img src="media/sund-1.webp" alt="Kræsen Multikasse"></div>
+      <div class="kraesen-grid-item-1"><img src="media/sund-2.webp" alt="Kræsen Bowl"></div>
+    </div>
+
+
+<!-- retter, 2 -->
+    <div class="sund-container-2">
+      <div class="kraesen-grid-item-2"><img src="media/sund-3.webp" alt="Kræsen Gryderet"></div>
+      <div class="kraesen-grid-item-2"><img src="media/sund-4.webp" alt="Kræsen Dumplings"></div>
+    </div>
+
+
+  <!-- Button, der førrer til bestillingssektion -->
+    <button class="sund-button">
+      <a href="#sundsection">Læg i kurv til 40 kr. per portion</a>
+    </button>
+
+
+ <!-- Bestillingssektion -->
+    <div id="sundsection">
+
+      <h1 class="sund-checkout-h1">SKRÆDDERSY DIN MÅLTIDSKASSE</h1>
+      <br>
+      <p class="sund-checkout-p">Her kan du skræddersy din måltidskasse. Kræsen Kassen indeholder portioner til 4 portioner.
+        <br><br> <b>1. Vælg antal dage</b> - du kan vælge mellem 2-5 dage. 
+        <br> Du vil modtage kassen 3 dage efter du har lagt din ordre.
+        <br><br> <b>2. Vælg evt. en abonnementsordning </b>- du kan altid opsige abonnementet gratis. 
+      </p>
+
+    </div>
+
+
+    <!-- Antal dage-counter fra 2 til 5 dage -->
+    <p class="kraesen-counter-p">Vælg antal dage</p>
+    <br><br>
+
+    <div class="kraesen-counter">
+      <button class="kraesen-btn-minus">-</button>
+      <span class="kraesen-count">0</span>
+      <button class="kraesen-btn-plus">+</button>
+    </div>
+
+
+<!-- Button til abonnementsordning -->
+    <label class="kraesen-check-button">
+      <input type="checkbox" class="kraesen-check" class="check-input">
+      <span class="kraesen-check-text">Abonnér på denne måltidskasse</span>
+    </label>
+
+    
+ <!-- gå til kurv -->
+    <div class="kraesen-kurv-container">
+      <button id="kraesen-kurv-button">Gå til kurv</button>
+    </div>
+
+  
+
+                                                                                                                                                                                                                                                                                                                                        
+    
+    
+
+
+  
+   <br><br><br><br>
+
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.facebook.com/?locale=da_DK" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.google.com/maps/place/Erhvervsakademi+Aarhus,+Ringvej+Syd+104/@56.1172139,10.1472511,17z/data=!3m1!4b1!4m6!3m5!1s0x464c6a9e0396fac5:0xc15dee336a6ae9f1!8m2!3d56.1172139!4d10.149826!16s%2Fg%2F11b6ntby31?entry=ttu" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+            <a href="https://www.findsmiley.dk/om_smiley/info_til_virksomheder/Sider/Generelt/Kontrolrapporter_paa_virksomhedens_hjemmeside.aspx" target="_blank"><i class="fa-regular fa-face-smile"></i></a>
+        </div>
+        <br>
+        <p class="copyright">Privatlivspolitik</p> 
+        <br>
+        <p class="kontakt">Tlf: +45 12 34 56 78 | kontakt@nippon.dk | Boysensgade 24, 8000 Aarhus C</p>
+    </footer>
+
+
+
+
+
+<script src="/js/javascript.js"></script>
+</body>
+</html>

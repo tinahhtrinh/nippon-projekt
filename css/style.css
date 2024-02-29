@@ -1,0 +1,1392 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* _______________________________________________________________________________________________ */
+
+
+
+/* Root variables */
+:root {
+    --grey: #d2d2d2;
+    --off-black: #1d262f;
+    --scarlet: #a61128;
+    --scarlet2: #8d0e22;
+    --white: #ffffff;
+} 
+
+
+
+/* Fjern link dekorationer */
+a {text-decoration: none;}
+
+
+
+/* _______________________________________________________________________________________________ */
+
+
+
+/* Styling af kurv-ikon */
+.cart {
+  position: fixed;
+  z-index: 999;
+  }
+
+  .cart img { 
+    margin-left: 1370px;
+    padding-top: 20px;
+    position: fixed;
+    width: 25px;
+}
+
+
+
+/* Styling af bruger-ikon */
+.user {
+  position: fixed;
+  z-index: 999;
+  }
+
+  .user img {
+    margin-left: 1335px;
+    padding-top: 20px;
+    position: fixed;
+    width: 20px;
+}
+
+
+
+/* _______________________________________________________________________________________________ */
+
+
+
+/* NAVIGATIONSBAR - Styling af navigation bar */
+.navbar {
+  background-color: var(--white);
+  position: fixed; 
+  top: 0;
+  width: 100%; 
+  z-index: 998;
+  }
+
+  
+  /* Styling af nav ul */
+  .menu {
+    align-items: center;
+    align-items: flex-end;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 60px;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 60px;
+    padding-bottom: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+  }
+
+
+  /* Styling af Nippon logo */
+  .menu, .logo img {
+    margin-bottom: -10px;
+  }
+
+
+  /* Styling af Nippon logo */
+  .logo img {
+    max-width: 110px;
+    height: auto;
+  }
+
+
+  /* Styling af Nippon logo */
+  .logo {
+    position: relative;
+  }
+
+
+  /* Styling af nav li */
+  .menu li {
+    margin: 0;
+    color: var(--off-black);
+    background-color: var(--white);
+    text-align: center;
+    position: relative; /* Set position relative for dropdown positioning */
+  }
+
+
+  /* Styling af dropdown-menu */
+  .dropbtn {
+    font-weight: 500;
+  }
+
+
+  /* Styling af forside-menupunkt */
+  .forside {
+    font-weight: 500;
+  }
+  
+
+  /* Styling af nav li links */
+  .menu li a {
+    color: var(--off-black);
+    padding: 12px;
+    text-align: center;  
+    text-decoration: none;
+  }
+
+  
+  /* Styling af besøgte menupunkt-links */
+  menu li a:visited {
+    color: var(--off-black);
+  }
+  
+  
+  /* Styling af dropdown-content */
+  .dropdown-content {
+    background-color: var(--white);
+    display: none;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: lighter;
+    left: 50%;
+    top: 100%;
+    min-width: 160px;
+    padding-top: 8px;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 997;
+  }
+  
+
+  /* Styling af dropdown-hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+  /* Styling af dropdown-links */
+  .dropdown-content a {
+    color: #fff;
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+
+
+  /* Styling af hover på dropdown-links */
+  .dropdown-content a:hover {
+    background-color: var(--grey);
+    color: var(--scarlet);
+}
+  
+
+
+/* _______________________________________________________________________________________________ */
+
+
+
+/* FORSIDE - Styling af forside, sektion 1 */
+.baggrund {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* FORSIDE - Styling af forside billede */
+  .forside-billede {
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -44%;
+  }
+
+
+  /* FORSIDE - Styling af 'se udvalget'-button */
+  .forside-btn {
+    background-color: var(--scarlet); 
+    border: none; 
+    border-radius: 20px;
+    color: var(--white); 
+    cursor: pointer;
+    font-size: 1.2rem;
+    left: 1170px; 
+    padding: 10px 20px;
+    position: absolute; 
+    top: 650px; 
+    transform: translate(-50%, -50%); 
+  }
+
+
+  /* FORSIDE - Styling af 'se udvalget'-button link */
+  .forside-btn a {
+    color: var(--white)
+  }
+
+
+  /* FORSIDE - Styling af 'se udvalget'-button besøgt link */
+  .forside-btn a:visited {
+    color: var(--white)
+}
+
+
+
+/* _______________________________________________________________________________________________ */
+
+
+
+/* MÅLTIDSKASSER - Styling af forside, sektion 2 */
+  #baggrund2 {
+    background-color: var(--off-black);
+    height: 800px;
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 100%;
+    transition: all 2s ease;
+  }
+
+
+
+  /* MÅLTIDSKASSER - Styling af image container */
+  .img-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between; 
+    margin: 0 auto; 
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 100%;
+    z-index: 997;
+  }
+
+
+
+  /* MÅLTIDSKASSER - Styling af måltidskasse-billeder i image container */
+  .img-container img {
+    border-radius: 12px;
+    width: 260px;
+  }
+  
+
+
+  /* MÅLTIDSKASSER - Styling af måltidskasse-billeder */
+  .kasser {
+    border-radius: 12px;
+    height: 500px; 
+    margin-bottom: -5px;
+    padding-top: 165px;
+    text-align: center;
+    width: calc(25% - 20px); 
+    z-index: 996;
+  }
+
+
+  
+  /* MÅLTIDSKASSER - Styling af box-container til 4 hvide bokse */
+  .box-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between; 
+    margin: 0 auto; 
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 100%; 
+  }
+  
+
+
+  /* MÅLTIDSKASSER - Styling af 4 hvide bokse */
+  .box {
+    background-color: var(--white);
+    border-radius: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    height: 500px; 
+    margin-bottom: -5px;
+    margin-top: -350px;
+    padding-top: 470px;
+    text-align: center;
+    width: calc(25% - 20px);
+  }
+
+
+
+  /* MÅLTIDSKASSER - Styling af button container */
+  .button-container {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between; 
+    margin: 22px auto 0; 
+    max-width: 1200px;
+    padding: 0 20px; 
+  }
+  
+
+
+  /* MÅLTIDSKASSER - Styling af 4 buttons */
+  .button {
+    background-color: var(--scarlet);
+    border: none;
+    border-radius: 50px;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    
+}
+
+
+
+/* _______________________________________________________________________________________________ */
+
+
+
+/* MÅLTIDSKASSE - Styling af baggrund container */
+  .kraesen-bg-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto); 
+    gap: 20px;
+  }
+
+  .kraesen-bg-grid-item {
+    background-image: url('media/baggrund.webp'); 
+    background-size: cover;
+  }
+
+  .kraesen-bg-grid-item-1 {
+    background-image: url('media/baggrund.webp');
+    background-size: cover;
+    margin-bottom: 50px;
+  }
+
+  .kraesen-bg-grid-item img {
+    width: 100%;
+    margin-top: -4px;
+  }
+
+  .kraesen-bg-grid-item-1 img {
+    width: 100%;
+    margin-top: -4px;
+    margin-bottom: 50px;
+}
+
+
+
+/* _______________________________________________________________________________________________ */
+
+
+
+/* KRÆSEN KASSE - Styling af titel og brødtekst */
+  .kraesen-h1, .kraesen-p {
+      max-width: 100%;
+      margin: 0 auto;
+      margin-left: 100px;
+      margin-right: 100px;
+      line-height: 1.6; 
+      letter-spacing: 0.05em;
+      word-spacing: 0.1em; 
+  }
+
+
+
+  /* LUKSUS KASSE - Styling af titel og brødtekst */
+  .luksus-h1, .luksus-p {
+    max-width: 100%; 
+    margin: 0 auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    line-height: 1.6; 
+    letter-spacing: 0.05em; 
+    word-spacing: 0.1em;
+  }
+
+
+
+  /* SUND KASSE - Styling af titel og brødtekst */
+  .sund-h1, .sund-p {
+    max-width: 100%; 
+    margin: 0 auto; 
+    margin-left: 100px;
+    margin-right: 100px;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em; 
+  }
+
+
+
+  /* SUND KASSE - Styling af titel og brødtekst */
+  .vegansk-h1, .vegansk-p {
+    max-width: 100%; 
+    margin: 0 auto; 
+    margin-left: 100px;
+    margin-right: 100px;
+    line-height: 1.6;
+    letter-spacing: 0.05em; 
+    word-spacing: 0.1em;
+}
+
+
+
+/* KRÆSEN KASSE -  Individuel styling af titel og brødtekst */
+  .kraesen-h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 150px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .kraesen-p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+    margin-top: 30px; 
+    text-align: justify;  
+  }
+
+
+  
+  /* LUKSUS KASSE -  Individuel styling af titel og brødtekst */
+  .luksus-h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 150px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .luksus-p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+    margin-top: 30px; 
+    text-align: justify;
+  }
+
+
+
+  /* SUND KASSE -  Individuel styling af titel og brødtekst */
+  .sund-h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 150px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .sund-p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+    margin-top: 30px; 
+    text-align: justify;
+  }
+
+
+
+  /* VEGANSK KASSE -  Individuel styling af titel og brødtekst */
+  .vegansk-h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 150px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .vegansk-p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+    margin-top: 30px; 
+    text-align: justify;
+}
+
+
+
+/* _______________________________________________________________________________________________ */
+
+
+/* KRÆSEN KASSE RETTER - Styling af container, række 1 */
+.kraesen-container-1 {
+    display: grid;
+    gap: 100px 20px; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto); 
+    margin-top: -2450px;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 999;
+  }
+
+  .kraesen-grid-item-1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .kraesen-grid-item-1 img {
+    border-radius: 15px;
+    max-width: 90%;
+}
+
+
+
+/* LUKSUS KASSE RETTER - Styling af container, række 1 */
+.luksus-container-1 {
+    display: grid;
+    gap: 100px 20px; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto); 
+    margin-top: -2450px;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 999;
+  }
+
+  .luksus-grid-item-1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .luksus-grid-item-1 img {
+    border-radius: 15px;
+    max-width: 90%;
+}
+
+
+
+/* SUND KASSE RETTER - Styling af container, række 1 */
+.sund-container-1 {
+    display: grid;
+    gap: 100px 20px; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto); 
+    margin-top: -2450px;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 999;
+  }
+
+  .sund-grid-item-1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sund-grid-item-1 img {
+    border-radius: 15px;
+    max-width: 90%;
+}
+
+
+
+/* VEGANSK KASSE RETTER - Styling af container, række 1 */
+.vegansk-container-1 {
+    display: grid;
+    gap: 100px 20px; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto); 
+    margin-top: -2450px;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 999;
+}
+
+  .vegansk-grid-item-1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .vegansk-grid-item-1 img {
+    border-radius: 15px;
+    max-width: 90%;
+}
+
+
+
+/* KRÆSEN KASSE RETTER - Styling af container, række 2 */
+.kraesen-container-2 {
+    display: grid;
+    gap: 100px 20px; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    margin-bottom: -50px;
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 999;
+  }
+
+  .kraesen-grid-item-2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .kraesen-grid-item-2 img {
+    border-radius: 15px;
+    max-width: 90%;
+}
+
+
+
+/* LUKSUS KASSE RETTER - Styling af container, række 2 */
+.luksus-container-2 {
+    display: grid;
+    gap: 100px 20px; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    margin-bottom: -50px;
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 999;
+  }
+
+  .luksus-grid-item-2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .luksus-grid-item-2 img {
+    border-radius: 15px;
+    max-width: 90%;
+}
+
+
+
+/* SUND KASSE RETTER - Styling af container, række 2 */
+.sund-container-2 {
+    display: grid;
+    gap: 100px 20px; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    margin-bottom: -50px;
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 999;
+  }
+
+  .sund-grid-item-2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sund-grid-item-2 img {
+    border-radius: 15px;
+    max-width: 90%;
+}
+
+
+
+/* VEGANSK KASSE RETTER - Styling af container, række 2 */
+.vegansk-container-2 {
+    display: grid;
+    gap: 100px 20px; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    margin-bottom: -50px;
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 999;
+  }
+
+  .vegansk-grid-item-2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .vegansk-grid-item-2 img {
+    border-radius: 15px;
+    max-width: 90%;
+}
+
+
+
+/* _______________________________________________________________________________________________ */
+
+
+
+/* MÅLTIDSKASSE - Styling af KRÆSEN button, der fører videre til bestillingssiden */
+.kraesen-button {
+    background-color: var(--scarlet);
+    border-color: var(--white);
+    border-radius: 50px;
+    border-style: groove;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 38%;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  /* Styling af besøgte links - farven skal være hvid */
+  .kraesen-button a:visited {
+    color: var(--white);
+  }
+
+  /* Styling af linket i knappen */
+  .kraesen-button a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: none;
+}
+
+
+
+/* MÅLTIDSKASSE - Styling af LUKSUS button, der fører videre til bestillingssiden */
+.luksus-button {
+    background-color: var(--scarlet);
+    border-color: var(--white);
+    border-radius: 50px;
+    border-style: groove;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 38%;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  /* Styling af besøgte links - farven skal være hvid */
+  .luksus-button a:visited {
+    color: var(--white);
+  }
+
+  /* Styling af linket i knappen */
+  .luksus-button a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: none;
+
+}
+
+
+
+/* MÅLTIDSKASSE - Styling af SUND button, der fører videre til bestillingssiden */
+.sund-button {
+    background-color: var(--scarlet);
+    border-color: var(--white);
+    border-radius: 50px;
+    border-style: groove;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 38%;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  /* Styling af besøgte links - farven skal være hvid */
+  .sund-button a:visited {
+    color: var(--white);
+  }
+
+  /* Styling af linket i knappen */
+  .sund-button a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: none;
+
+}
+
+
+
+/* MÅLTIDSKASSE - Styling af VEGANSK button, der fører videre til bestillingssiden */
+.vegansk-button {
+    background-color: var(--scarlet);
+    border-color: var(--white);
+    border-radius: 50px;
+    border-style: groove;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 38%;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  /* Styling af besøgte links - farven skal være hvid */
+  .vegansk-button a:visited {
+    color: var(--white);
+  }
+
+  /* Styling af linket i knappen */
+  .vegansk-button a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: none;
+}
+
+
+
+/* _______________________________________________________________________________________________ */
+
+
+
+/* MÅLTIDSKASSER - Styling af KRÆSEN sektion med bestillingsside */
+#kraesensection {
+    background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 400px;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+    padding-top: 170px;
+    text-align: center;
+    width: 100%;
+    word-spacing: 0.1em; 
+  }
+
+  .kraesen-checkout-h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+  }
+
+  .kraesen-checkout-p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em; 
+    line-height: 1.6;
+    word-spacing: 0.1em; 
+}
+
+
+
+/* MÅLTIDSKASSER - Styling af LUKSUS sektion med bestillingsside */
+#luksussection {
+    background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 400px;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+    padding-top: 170px;
+    text-align: center;
+    width: 100%;
+    word-spacing: 0.1em; 
+  }
+
+  .luksus-checkout-h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+  }
+
+  .luksus-checkout-p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em; 
+    line-height: 1.6;
+    word-spacing: 0.1em; 
+}
+
+
+
+/* MÅLTIDSKASSER - Styling af SUND sektion med bestillingsside */
+#sundsection {
+    background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 400px;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+    padding-top: 170px;
+    text-align: center;
+    width: 100%;
+    word-spacing: 0.1em; 
+  }
+
+  .sund-checkout-h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+  }
+
+  .sund-checkout-p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em; 
+    line-height: 1.6;
+    word-spacing: 0.1em; 
+}
+
+
+
+/* MÅLTIDSKASSER - Styling af VEGANSK sektion med bestillingsside */
+#vegansksection {
+    background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 400px;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+    padding-top: 170px;
+    text-align: center;
+    width: 100%;
+    word-spacing: 0.1em; 
+  }
+
+  .vegansk-checkout-h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+  }
+
+  .vegansk-checkout-p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em; 
+    line-height: 1.6;
+    word-spacing: 0.1em; 
+}
+
+
+
+/* _______________________________________________________________________________________________ */
+
+
+
+/* BESTILLING - Styling af counter til valg af antal dage (2-5 dage) */
+.kraesen-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Add this line to center horizontally */
+  }
+
+
+
+  /* Styling af - og + knapperne */
+  .kraesen-btn-minus,
+  .kraesen-btn-plus {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: var(--scarlet);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+
+  /* Styling af boks med counter-nummer */
+  .kraesen-count {
+    margin: 0 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+
+  /* Styling af beskrivelsesteksten ovenover counter */
+  .kraesen-counter-p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+
+
+/* _______________________________________________________________________________________________ */
+
+
+/* ABONNEMENT - Styling af abonnement check-box */
+.kraesen-check-button {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;    
+    margin-top: 30px;   
+  }
+
+
+
+  /* Skjul checkbox input */
+  .kraesen-check-input {
+    display: none;
+  }
+
+
+  /* Styling af abonnement-tekst */
+  .kraesen-check-text {
+    background-color: var(--grey);
+    border-color: var(--scarlet);
+    border-radius: 5px;
+    border-width: 2px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    padding: 6px 10px;
+  }
+
+
+
+  /* Styling af check-box, når den er 'ticked' */
+  .kraesen-check-input:checked + .kraesen-check-text {
+    background-color: var(--white);
+}
+
+
+
+/* _______________________________________________________________________________________________ */
+
+
+
+/* TIL KURV - Styling af 'gå til kurv' knap */
+.kraesen-kurv-container {
+    align-items: center;
+    display: flex;
+    height: 30px;    
+    justify-content: center;    
+  }
+
+  #kraesen-kurv-button {
+    background-color: var(--scarlet);
+    border: none;
+    border-radius: 50px;
+    color: var(--white);
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-top: 100px;
+    padding: 6px 14px;
+}
+
+
+
+/* _______________________________________________________________________________________________ */
+
+
+
+/* ØKOLOGI - Styling af økologi container */
+.oekologi-content {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+
+
+
+  /* Styling af h1 på ØKOLOGI siden */
+  .oekologi-h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 150px;
+  }
+
+
+
+  /* Styling af p på ØKOLOGI siden */
+  .oekologi-p {
+    margin-left: 75px;
+}
+
+
+
+/* ØKOLIGI - Styling af main container */
+.okologi-certificeringer {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+
+
+  /* ØKOLIGI - Styling af sub container */
+  .okologi-certifikat {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+    z-index: 999;
+  }
+
+
+
+  /* ØKOLIGI - Styling af økologi-certifikat img */
+  .okologi-certifikat img {
+    display: block;
+    height: auto;
+    margin-bottom: 10px;
+    width: 200px;
+  }
+
+
+  /* ØKOLOGI - Styling af tekst under økologi-certifikat */
+  .okologi-certifikat p {
+    color: var(--white);
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.05em; 
+    margin-top: -30px;
+    word-spacing: 0.1em;
+  }
+
+
+
+  /* ØKOLOGI - Styling af rød box bag økologi-tekst */
+  .oekologi-box {
+    background-color: var(--scarlet);
+    height: 50px;
+    margin-bottom: 50px;
+    margin-top: -60px;
+    width: 100%;
+  }
+
+
+
+/* _______________________________________________________________________________________________ */
+
+
+
+/* OM OS - Styling af tekst container */
+.om-os, .om-os-p {
+    line-height: 1.6; 
+    letter-spacing: 0.05em;
+    margin: 0 auto; 
+    margin-left: 100px;
+    margin-right: 100px;
+    max-width: 100%; 
+    word-spacing: 0.1em; 
+  }
+
+
+
+  /* OM OS - Styling af titel  */  
+  .om-os {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 150px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+
+
+  /* OM OS - Styling af brødtekst */
+  .om-os-p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+    margin-top: 30px; 
+    text-align: justify;
+}
+
+
+
+/* OM OS - Styling af OM OS billede */
+.om-os-billede {
+  display: block;
+  height: auto;
+  margin: 20px auto;
+  width: 70%;
+}
+
+
+
+/* OM OS - Styling af rød boks bag OM OS billede */
+.om-os-box {
+  background-color: var(--scarlet);
+  height: 550px;
+  margin-bottom: 100px;
+  margin-top: -630px;
+  width: 100%;
+}
+
+
+
+/* _______________________________________________________________________________________________ */
+
+
+
+/* CERTIFICERINGER - Styling af billede til CERTIFICERINGER */
+.stort-billede {
+    display: block;
+    margin: -200px auto -230px;
+    max-width: 75%;
+  }
+
+
+
+  /* CERTIFICERINGER - Styling af titel */
+  .certificeringer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 155px;
+  }
+
+
+
+  /* CERTIFICERINGER - Styling af brødtekst */
+  .certificeringer-p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.05em; 
+    line-height: 1.6; 
+    padding-left: 50px;
+    padding-top: 15px;
+    text-align: left; 
+    word-spacing: 0.1em;
+}
+
+
+
+/* CERTIFICERINGER - Styling af main container for billeder af certificeringsmærker */
+.certifications {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+
+
+  /* CERTIFICERINGER - Styling af sub container for billeder af certificeringsmærker */
+  .certification {
+    margin: 25px;
+  }
+
+
+
+  /* CERTIFICERINGER - Styling af certificeringsbilleder */
+  .certification img {
+    display: block;
+    height: auto;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    text-align: center;
+    width: 100px;
+  }
+
+
+
+  /* CERTIFICERINGER - Styling af brødtekst til certificeringsbilleder */
+  .certification p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 100%
+  }
+
+
+
+  /* CERTIFICERINGER - Styling af brødtekst til certificeringsbilleder */
+  .certi-p {
+    color: var(--white);
+    font-weight: bold;
+  }
+
+
+
+  /* CERTIFICERINGER - Styling af brødtekst til certificeringsbilleder */
+  .certi-pp {
+    color: var(--white);
+    font-weight: lighter;
+}
+
+
+
+/* CERTIFICERINGER - Styling af rød boks bag brødtekst */
+.certificeringer-box {
+  background-color: var(--scarlet);
+  height: 80px;
+  margin-bottom: -50px;
+  margin-top: -110px;
+  width: 100%;
+}
+
+
+
+/* _______________________________________________________________________________________________ */
+
+
+
+
+/* KLIMAAFTRYK - Styling af titel */
+
+.klimaaftryk-h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 170px;
+}
+
+
+
+/* KLIMAAFTRYK - Styling af infographic container */
+.infographic-container {
+  display: inline-block;
+  position: relative;
+}
+
+
+
+/* KLIMAAFTRYK - Styling af infographic billede */
+.infographic {
+  background-image: url('infographic_nippon.webp');
+  background-position: center; 
+  background-size: cover; 
+  display: block;
+  margin: 0 auto;
+  margin-top: -70px;
+  width: 95%;
+  z-index: 1;
+}
+
+
+
+/* _______________________________________________________________________________________________ */
+
+
+
+/* FOOTER - Styling af footer */
+.footer {
+    background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 8rem;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    padding-top: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 998;
+  }
+
+
+  /* Styling af social-ikoner */
+  .social {
+    transform: none;
+    width: 100%;
+  }
+
+
+  /* Styling af social-ikoner link */
+  .social a {
+    color: var(--scarlet);
+    font-size: 1.8rem;
+    margin: 0px 10px;
+    opacity: 90%; 
+    text-decoration: none;  
+    }
+
+
+  /* Styling af social-ikoner hover */
+  .social a:hover {
+    color: var(--scarlet2);
+    opacity: 100%;
+  }
+
+
+  /* Styling af social-ikoner besøgte links */
+  .social a:visited { 
+    color: var(--scarlet) 
+}
